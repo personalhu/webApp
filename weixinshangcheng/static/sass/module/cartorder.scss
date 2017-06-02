@@ -1,0 +1,249 @@
+@charset "utf-8";
+.cart_content{
+        width:99%;height: 300px;text-align: center;position: relative;top: 50px;left: 0;margin: 0 auto;
+    .null_shopping{
+        width: 100%;text-align: center;
+    .cart_pic{
+        background: url(../images/cart_pic.png)no-repeat center;height: 100px;
+        
+        }
+    h4{
+            font-size: 1.8rem;color: #CCCCCC;margin: 1rem 0;      
+    }
+    p{
+        a.enter{
+            padding: 1rem;border: 0.1rem solid #ddd;font-size: 1.5rem;line-height: 1.5rem;border-radius: 0.5rem;
+            background-color: #FAFAFA;display: inline-block;
+        }
+    }
+    }
+    .cartlist{
+        width: 100%;
+        li{
+            margin: 1rem;
+            @extend .cartshadow;
+            a{
+                display: block;overflow: hidden;border-bottom: 1px dashed #E7E7E7;
+                span{
+                    display: block;overflow: hidden;float: left;
+                    img{
+                        width: 50px;
+                    }
+                   
+                }
+                 .carttitle{
+                        font-family: "microsoft yahei";font-size: 1.4rem;font-weight: bold;width: 60%;
+                    }
+                    .mt15{
+                        margin-top: 1.5rem;
+                    }
+            }
+            .productoperate{
+                margin-bottom: 0.5rem;border-bottom: 1px dashed #E7E7E7;padding-bottom: 0.5rem;display: block;overflow: hidden;
+                .buylabel{
+                    font-size: 1.4rem;float: left;margin: 1.5rem 1rem 0 2rem;font-family: "microsoft yahei";display: block;
+                }
+                .buynuminput{
+                    margin: 1.1rem 0 0 1.5rem;overflow: hidden;width: 60%;    
+                }
+                 .buynuminput1{
+                    margin: 1.1rem 0 0 1.5rem;overflow: hidden;width: 60%;display: inline-block;
+                    .delbtn{
+                        background: url(../images/del.png)no-repeat;float: left;width: 1.5rem;height: 1.8rem;margin-left: 2.2rem;background-size: contain;cursor: pointer;
+                    }
+                    
+                }
+            }    
+        }
+    }
+}
+.onthebottom{
+    position: fixed;left: 0;bottom: 0;width: 100%;height: 50px;z-index: 10000;margin: 0 auto; background: #F4F4F4;border-top: 1px solid #B3B3B3;
+    .clearcart{
+        width: 3.5rem;
+        background: url(../images/del.png) no-repeat left center;
+        padding-left: 2.5rem;font-size: 1rem;color: #0e69b6;height: 2.2rem;margin-top: 5px;padding-top: 10px;cursor: pointer;
+        font-weight: bold;margin-left: 5px;
+    }
+    .totalprice{
+        margin: 1.3rem 0px 0px 3rem;font-size: 1.4rem;
+    }
+    .jiesuanbtn{
+       margin:0.8rem 0.5rem 0 0 ;font-size: 1.6rem;width: 6rem;height: 2.2rem;line-height: 2.2rem;background-color: #28c728;
+       text-align: center;border: 1px solid #31b231;border-radius: 5px;cursor: pointer;
+       a{
+           color: #fff;
+       }
+    }
+}
+#order_content{
+    width: 99%;margin: 0 auto;padding-top: 5rem;
+}
+#address_operate{
+   margin: 0 auto; width:99%;background-color:#3ede30 ;text-align: center;line-height: 3.5rem;border:0.1rem solid #FFFFFF;border-radius: 8px; /* Safari 5.1 to 6.0 */ /* Opera 11.1 to 12.0 */
+  background: -webkit-linear-gradient(bottom, #3ede30,#18b218);
+  background: -moz-linear-gradient(bottom, #3ede30,#18b218);
+  background: -o-linear-gradient(bottom , #3ede30,#18b218);
+  background: -webkit-gradient(linear, 100% 100%, 0 0, from(#3ede30), to(#18b218));
+  background: linear-gradient(to top, #3ede30,#18b218); /* Firefox 3.6 to 15 */ /* 标准语法 */
+    a{
+        color: #FFFFFF;display: block;
+    }
+}
+#addresslist{
+    @extend .cartshadow;width: 94%;margin: 1rem auto 1rem;
+    h3{
+        font-size: 1.6rem;color: #666;margin-top:0.6rem;margin-left: 0.6rem;margin-bottom: 0.6rem;
+    }
+    ul{
+        border-bottom: 0.1rem dashed #ddd;
+    } 
+    ul:nth-child(4),ul:nth-child(5){
+        border: none;
+    }
+    .address_detail {
+        padding: 0.5rem;
+        input{
+            
+        }
+        span{
+            font-size: 1.6rem;
+        }
+    }
+    .contact_person{
+        padding: 0.5rem;margin-left: 1.2rem;
+        strong{
+            font-size: 1.4rem;
+        }
+        span{
+            font-size: 1.4rem;margin-right: 2.5rem;
+        }
+    }
+    #new_address{
+    width: 89%;background-color: #f2f2f2;margin: 1rem auto;padding: 1rem;
+    li{
+   
+    }
+    p{
+        font-size: 1.4rem;
+    }
+    input[type='text'],input[type='number']{
+        line-height: 3.5rem;width: 95%;border-radius: 5px;margin: 1rem auto 1rem;
+        border: 1px solid #ddd;font-size: 2rem;
+    }
+
+    select{
+        height: 2.5rem;border: 1px solid #ddd;border-radius: 5px;width: 8rem;
+    }
+    
+}
+}
+#invoice{
+    border: 0.1rem solid #F2F2F2;
+    border-radius: 10px;
+    background-color: #FFFFFF;
+    width: 94%;margin: 1rem auto;
+    padding:1rem ;box-sizing: border-box;
+    
+    h3{
+        font-size: 1.6rem;margin-bottom: 0.6rem;
+    }
+    input[type='checkbox']{
+        margin-left: 1rem;
+    }
+    span{
+        font-size: 1.5rem;
+    }
+    p{
+        font-size: 1.5rem;margin-top: 0.5rem;margin-bottom: 0.5rem;
+    }
+    select:nth-child(2){
+        height: 3rem;width: 100%;  border: 1px solid #ddd;border-radius: 5px;
+    }
+     select:nth-child(4){
+        height: 3rem;width: 30%;  border: 1px solid #ddd;border-radius: 5px;
+    }
+    input[type='text']{
+        line-height: 2.8rem;font-size: 1.6rem;width: 15rem;
+        border: 1px solid #ddd;border-radius: 5px;
+    }
+}
+#invoice_content{
+    padding: 1rem;background-color: #F2F2F2;
+}
+
+/*商品清单*/
+#shoplist{ 
+    border-color:#F2F2F2;
+    border-radius: 10px;
+    background-color: #FFFFFF;
+    width: 94%;
+    margin: 1rem auto;
+    padding-top: 1rem;
+    box-sizing: border-box;
+     h3 {
+        
+         margin-left: 1.2rem;
+        font-size: 1.6rem;
+        margin-bottom: 0.6rem;
+    }
+    table{
+        width: 100%;
+        border-collapse: separate;
+        border-color: grey;
+        tr{
+            text-align: center;line-height: 3rem;font-size: 1.4rem;
+        }
+    }
+    .list_title{
+        background-color: #EEEEEE;
+        color: #666;
+    }
+}
+
+#leave_message{
+       border: 0.1rem solid #F2F2F2;
+    border-radius: 10px;
+    background-color: #FFFFFF;
+    width: 94%;
+    margin: 1rem auto;
+    margin-bottom: 4rem;
+    padding: 1rem;
+    box-sizing: border-box;
+    
+    h3{
+        font-size: 1.6rem;
+        margin-bottom: 0.6rem;
+        margin-left: 0.5rem;
+    }
+    textarea{
+        width: 95%;margin: 0.5rem auto;
+        border-radius: 5px;
+    }
+}
+#submit_order{
+    width: 100%;
+    height: 4rem;
+    background-color:#F4F4F4 ;
+    position: fixed;
+    bottom: 0;left: 0;
+    box-sizing: border-box;
+    padding: 0.8rem;
+    button{
+        float: right;
+        width: 25%;
+        background-color:#28c728 ;
+        border: 1px solid #31b231;
+        height: 2.5rem;
+        border-radius: 5px;
+        font-size: 1.6rem;
+        color: #fff;
+        
+    }
+    span{
+        
+       float: left;
+        margin-top: 0.4rem;
+        font-size: 1.6rem;
+    }
+}
